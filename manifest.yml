@@ -24,3 +24,14 @@ dependencies:
     cf_stacks:
       - cflinuxfs2
     md5: 7d28497395b62221f3380e82f89cd197
+
+  
+applications:
+- name: basti-staticfile-1
+  command: index.html
+  memory: 64M
+  # Add your name/initials to make the hostname unique
+  # host: emcday-${random-word}
+  host: basti-staticfile-1
+  # Currently defaults to PWS
+  domain: cfapps.io
